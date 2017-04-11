@@ -70,7 +70,8 @@ exports.handler = function (event, context) {
             var params = {
                 Destination: {
                     ToAddresses: [
-                        config.targetAddress
+                        config.targetAddress,
+                        config.targetCCAddress
                     ]
                 },
                 Message: {
